@@ -1,0 +1,23 @@
+.primerdiv-eevee,
+.segundodiv-eevees,
+.tercerdiv-eeveemimiendo{
+    height: 100px;
+    width: 100px;
+    margin-top: 60px;
+    margin-left: 70px;
+    border: 3px solid black;
+    transition: all 0.10s; 
+}
+.primerdiv-eevee:hover,
+.segundodiv-eevees:hover,
+.tercerdiv-eeveemimiendo:hover{
+    cursor: pointer;
+    box-shadow: 0px 0px 35px 3px blue;
+    transform: scale(1.3); /* escala la imagen cuando el cursor pase sobre ella*/
+}
+.primerdiv-eevee img,
+.segundodiv-eevees img,
+.tercerdiv-eeveemimiendo img{
+    height: 100%;
+    width: 100%;
+}
