@@ -1,0 +1,18 @@
+body{
+  background-color: pink;
+}
+
+.sailor-moon-banner{
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.smbanner{
+  width: 1900px;
+  height: 270px;
+}
+.butoons{
+
+}
+
