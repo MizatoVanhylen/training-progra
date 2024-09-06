@@ -1,18 +1,59 @@
-body{
-  background-color: pink;
+body {
+  background-color: #fdcdea;
 }
 
-.sailor-moon-banner{
+.ctn-banner {
+  display: flex; 
+  justify-content: center; 
+}
+
+.smbanner {
+  width: 2000px;
+  height: 400px;
+}
+
+.butonns{
   display: flex;
-  flex-direction: column;
-  width: 100%;
+  justify-content: space-evenly;
 }
 
-.smbanner{
-  width: 1900px;
-  height: 270px;
+.btn-Index{
+  background-color: #a9e0f7;
+  width: 200px;
+  height: 50px;
+  border-radius: 20px;
+  border: 2px solid #599ebb;
 }
-.butoons{
 
+.btn-Characters{
+  background-color: #fd8585;
+  width: 200px;
+  height: 50px;
+  border-radius: 20px;
+  border: 2px solid #c94d4d;
+}
+
+.btn-Seasons{
+  background-color: pink;
+  width: 200px;
+  height: 50px;
+  border-radius: 20px;
+  border: 2px solid #ff728b;
+}
+
+.btn-Curiosities{
+  background-color: #83ef83d9;
+  width: 200px;
+  height: 50px;
+  border-radius: 20px;
+  border: 2px solid #25ad25;
+}
+
+.btn-Wallpapers{
+  background-color: #e3e368;
+  width: 200px;
+  height: 50px;
+  border-radius: 20px;
+  border: 2px solid yellow;
 }
 
