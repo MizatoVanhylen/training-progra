@@ -19,7 +19,6 @@ body {
   display: flex;
 }
 
-
 .btn-Index:hover {
   background-color: #a9e0f7;
   border: 2px solid #599ebb;
@@ -43,4 +42,8 @@ body {
 .btn-Wallpapers:hover{
   background-color: #e3e368;
   border: 2px solid #ef8800db;
+}
+
+.bttn {
+ padding-right: 200px;
 }
