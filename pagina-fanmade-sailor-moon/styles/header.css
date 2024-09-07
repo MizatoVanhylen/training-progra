@@ -5,6 +5,7 @@ body {
 .ctn-banner {
   display: flex; 
   justify-content: center; 
+  position: relative;
 }
 
 .smbanner {
@@ -12,48 +13,34 @@ body {
   height: 400px;
 }
 
-.butonns{
+.buttons{
+  position: absolute;
+  bottom: 0px;
   display: flex;
-  justify-content: space-evenly;
 }
 
-.btn-Index{
+
+.btn-Index:hover {
   background-color: #a9e0f7;
-  width: 200px;
-  height: 50px;
-  border-radius: 20px;
   border: 2px solid #599ebb;
 }
 
-.btn-Characters{
+.btn-Characters:hover {
   background-color: #fd8585;
-  width: 200px;
-  height: 50px;
-  border-radius: 20px;
-  border: 2px solid #c94d4d;
+  border: 2px solid #3c3a3a;
 }
 
-.btn-Seasons{
+.btn-Seasons:hover { 
   background-color: pink;
-  width: 200px;
-  height: 50px;
-  border-radius: 20px;
-  border: 2px solid #ff728b;
+  border: 2px solid #4e45ef;
 }
 
-.btn-Curiosities{
+.btn-Curiosities:hover {
   background-color: #83ef83d9;
-  width: 200px;
-  height: 50px;
-  border-radius: 20px;
-  border: 2px solid #25ad25;
+  border: 2px solid #9e4c4c;
 }
 
-.btn-Wallpapers{
+.btn-Wallpapers:hover{
   background-color: #e3e368;
-  width: 200px;
-  height: 50px;
-  border-radius: 20px;
-  border: 2px solid yellow;
+  border: 2px solid #ef8800db;
 }
-
