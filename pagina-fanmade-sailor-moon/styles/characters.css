@@ -1,0 +1,19 @@
+.sailor-moon {
+  display: flex;
+  align-items: center;
+}
+
+.smusagi {
+  width: 150px;
+  margin-left: 200px;
+}
+
+.smdescription {
+  display: flex;
+  flex-direction: row-reverse;
+  margin: 3em;
+  font-family: sans-serif;
+  font-size: 30px;
+  position: relative;
+  margin-right: 250px;
+}
