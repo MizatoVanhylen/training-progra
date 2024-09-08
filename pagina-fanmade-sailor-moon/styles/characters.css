@@ -1,11 +1,18 @@
-.sailor-moon {
+.charapters {
   display: flex;
-  align-items: center;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+
+.smp {
+  display: flex;
+  flex-direction: row;
+  padding-top: 100px;
+  padding-right: 200px;
 }
 
 .smusagi {
-  width: 150px;
-  margin-left: 200px;
+  
 }
 
 .smdescription {
@@ -16,4 +23,9 @@
   font-size: 30px;
   position: relative;
   margin-right: 250px;
+}
+
+.btn {
+  margin-top: 30px;
+  margin-left: 25px;
 }
