@@ -2,7 +2,6 @@
   display: flex;
   flex-direction: row;
   padding-top: 100px;
-  padding-right: 200px;
 }
 
 .charapters {
@@ -82,3 +81,10 @@
   padding-bottom: 30px;
   padding: 30px;
 }
+
+.bttns {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+

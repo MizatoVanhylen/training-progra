@@ -7,3 +7,72 @@
   align-items: center;
   justify-content: center;
 }
+
+.smtrs {
+  width: 120px;
+}
+
+.smdescription {
+  display: flex;
+  flex-direction: column;
+  font-family: sans-serif;
+  font-size: 25px;
+  position: relative;
+  margin-right: 250px;
+  margin-left: 250px;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  font-family: sans-serif;
+  font-size: 25px;
+  position: relative;
+  margin-right: 250px;
+  margin-left: 250px;
+}
+
+.info {
+  font-family: sans-serif;
+  font-size: 25px;
+  position: relative;
+  margin-right: 250px;
+}
+
+.res {
+  font-family: sans-serif;
+  font-size: 20px;
+  position: relative;
+  margin-right: 100px;
+  margin-left: 100px;
+}
+
+.card-header-sm {
+  background-color: #fa8ee6;
+}
+
+.card-header-smr {
+  background-color: skyblue;
+}
+
+.card-header-sms {
+  background-color: #d9b8f8;
+}
+
+.card-header-smss {
+ background-color: #bcffe9;  
+}
+
+.card-header-smsss {
+  background-color: #f4deac
+}
+
+.saga {
+  font-family: sans-serif;
+  font-size: 20px;
+  margin: 3px;
+}
+
+.btn-link {
+  text-decoration: none;
+}
