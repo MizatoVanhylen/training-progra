@@ -32,6 +32,13 @@
   right: 0;
 }
 
+.img-reinolunar {
+  position: absolute;
+  width: 100%;
+  opacity: .2;
+ 
+}
+
 .img-resize {
   border-radius: 400px;
 }

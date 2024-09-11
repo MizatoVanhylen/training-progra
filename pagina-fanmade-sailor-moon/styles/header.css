@@ -47,3 +47,10 @@ body {
 .bttn {
  padding-right: 200px;
 }
+
+.img-reinolunar {
+  position: absolute;
+  width: 100%;
+  opacity: .2;
+ 
+}
