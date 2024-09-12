@@ -6,17 +6,14 @@
   padding-right: 0px;
   align-items: center;
   justify-content: center;
-  z-index: 1;
 }
 
 .curiosidad {
   height: 25%;
-  z-index: 1;
 }
 
 .smtrs {
   width: 120px;
-  z-index: 1;
 }
 
 .sub-t {
@@ -27,7 +24,6 @@
   position: relative;
   margin-right: 250px;
   margin-left: 100px;
-  z-index: 1;
 }
 .smdescription {
   display: flex;
@@ -37,7 +33,6 @@
   position: relative;
   margin-right: 250px;
   margin-left: 100px;
-  z-index: 1;
   align-items: center;
 }
 
@@ -45,18 +40,14 @@
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  z-index: 1;
 }
 
 .dt {
   width: 500px;
   border-radius: 100px;
-  z-index: 1;
 }
 
-.img-reinolunar {
-  position: absolute;
-  width: 100%;
-  opacity: .1;
- 
+.curiosities {
+  background-image: url("../imgs/rl.png");
+  background-repeat: repeat;
 }

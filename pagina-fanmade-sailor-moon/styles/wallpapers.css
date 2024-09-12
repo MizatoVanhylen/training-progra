@@ -1,0 +1,34 @@
+.title-sm{
+  display: flex;
+  padding-top: 50px;
+  padding-bottom: 10px;
+  padding-left: 0px;
+  padding-right: 0px;
+  align-items: center;
+  justify-content: center;
+}
+
+.smtrs {
+  width: 120px;
+}
+
+.wallpapers {
+  background-image: url("../imgs/rl.png");
+}
+
+.wallps {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-content: center;
+}
+
+.wallp-img{
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 100px;
+}
+
+.wpp-img {
+  width: 700px;
+}

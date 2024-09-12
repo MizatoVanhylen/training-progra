@@ -6,12 +6,10 @@
   padding-right: 0px;
   align-items: center;
   justify-content: center;
-  z-index: 1;
 }
 
 .smtrs {
   width: 120px;
-  z-index: 1;
 }
 
 .smdescription {
@@ -22,7 +20,6 @@
   position: relative;
   margin-right: 250px;
   margin-left: 250px;
-  z-index: 1;
 }
 
 .card {
@@ -33,7 +30,6 @@
   position: relative;
   margin-right: 250px;
   margin-left: 250px;
-  z-index: 1;
 }
 
 .info {
@@ -41,7 +37,6 @@
   font-size: 25px;
   position: relative;
   margin-right: 250px;
-  z-index: 1;
 }
 
 .res {
@@ -50,7 +45,6 @@
   position: relative;
   margin-right: 100px;
   margin-left: 100px;
-  z-index: 1;
 }
 
 .card-header-sm {
@@ -81,4 +75,8 @@
 
 .btn-link {
   text-decoration: none;
+}
+
+.center {
+  background-image: url("../imgs/rl.png");
 }
