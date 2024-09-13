@@ -13,7 +13,7 @@ body {
   height: 400px;
 }
 
-.buttons{
+.buttons {
   position: absolute;
   bottom: 0px;
   display: flex;
@@ -56,4 +56,10 @@ body {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+}
+
+.btn {
+  margin-top: 30px;
+  margin-left: 25px;
+  margin-bottom: 30px;
 }

@@ -93,11 +93,16 @@
 .char {
   display: flex;
   flex-direction: row;
+  flex-wrap: wrap;
 }
 
 .center {
   background-image: url("../imgs/rl.png");
   display: flex;
+}
+
+.btn-char {
+  width: 25%;
 }
 
 
