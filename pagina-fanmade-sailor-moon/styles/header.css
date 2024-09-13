@@ -1,5 +1,5 @@
 body {
-  background-color: #fdcdea;
+  background-image: url("../imgs/rl.png");
 }
 
 .ctn-banner {
@@ -39,7 +39,7 @@ body {
   border: 2px solid #9e4c4c;
 }
 
-.btn-Wallpapers:hover{
+.btn-Wallpapers:hover {
   background-color: #e3e368;
   border: 2px solid #ef8800db;
 }
@@ -48,9 +48,12 @@ body {
  padding-right: 200px;
 }
 
-.img-reinolunar {
-  position: absolute;
-  width: 100%;
-  opacity: .2;
- 
+.smtrs {
+  width: 120px;
+}
+
+.ftr {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
 }
