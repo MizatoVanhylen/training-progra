@@ -17,7 +17,9 @@ let persona = {
 
   const IMC = persona.peso/(persona.altura * persona.altura);
 
-  console.log("Tu IMC es de" + IMC)
+  const IMCComundecimal = IMC.toFixed(1);
+
+  console.log("Tu IMC es de" + IMCComundecimal)
   
     if(IMC < 18.5) {
       console.log("Bajo peso")

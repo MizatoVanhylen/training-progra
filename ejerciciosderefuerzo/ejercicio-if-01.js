@@ -58,9 +58,7 @@ if (pokemon.tipo == "fuego") {
 
 
 
-/*
-calcular cuanto peso en la luna.
-*/
+
 
 /*
 revisar si un numero es positivo o negativo 
