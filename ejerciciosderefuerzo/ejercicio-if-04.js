@@ -3,7 +3,7 @@ Revisar si un numero es positivo o negativo,
 además en el caso de que sea par por consola debe tirar un beep 
 en caso contrario debe tirar un boop
 */
-let numero = -3
+let numero = 10
   if (numero < 0) {
     console.log("El numero es negativo")
   } else if (numero == 0) {
