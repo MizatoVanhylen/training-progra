@@ -56,15 +56,6 @@ if (pokemon.tipo == "fuego") {
   console.log("Tu pokemon es tipo psiquico")
 }
 
-
-
-
-
-/*
-revisar si un numero es positivo o negativo 
-además en el caso de que sea par por consola le tirarle un beep en caso contrario le tiro un boop
-*/
-
 /*
 ejercicio que compare dos números que diga cual de los dos es mayor
 primero
