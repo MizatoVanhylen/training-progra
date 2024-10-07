@@ -10,12 +10,12 @@ Por debajo de 18.5    Bajo peso
 30.0 o más    Obesidad
 */
 
-let persona = {
+const persona = {
   peso: 73,
   altura: 1.75,
 }; 
 
-  const IMC = persona.peso/(persona.altura * persona.altura);
+  const IMC = persona.peso / (persona.altura * persona.altura);
 
   const IMCComundecimal = IMC.toFixed(1);
 

@@ -2,6 +2,7 @@
 > mayor  que
 < menor que
 != distinto a
+= es asignación
 == igual
 === completamente igual
 % modulo
@@ -10,7 +11,7 @@
 ! pero a la izquierda de una condición 
  */
 
-let pokemon = {
+const pokemon = {
   nombre: "Eevee",
   nivel: 22,
   shiny: true,
@@ -57,18 +58,42 @@ if (pokemon.tipo == "fuego") {
 }
 
 /*
-ejercicio que compare dos números que diga cual de los dos es mayor
-primero
-segundo 
-o iguales
+Crear un objeto que diga persona y debe tener 3 notas en una asignatura
+la primera nota vale 30%
+la segunda vale 20%
+y la ultima vale 50%
+pasar promedio de la nota segun el porcentaje 
+
+promedio sin tomar en cuenta el porcentaje 
 */
 
 /*
-ejercicio que con una nota, me indique si aprueba o no 3.9 no aprueba, en el caso de que la nota sea igual a 7
-la persona ganara 5 estrellitas felices y carita feliz
+cachipun con elección de valores
 */
-
+ 
 /*
-nombre escrito con solo mayusculas en las iniciales  covertir nombre solo a mayusculas y luego solo a minusculas 
+Una persona va a llevar productos en su carrito 
+lleva 3 productos y cada uno tiene un valor propio
+la persona va decir cual producto quiere y cuanta cantidad quiere del producto
+se debe sacar el valor total por producto y el valor total de la boleta
 */
 
+/* Estructura de producto */
+
+const productos = {
+  bebida: {
+    nombre:"CocaCola",
+    precio: 1500,
+    cantidad: 3
+  },
+  cereal: {
+    nombre:"Estrellitas",
+    precio: 2500,
+    cantidad: 2
+  },  
+  pan: {
+    nombre:"Pan",
+    precio: 2400,
+    cantidad: 1
+  },
+}
