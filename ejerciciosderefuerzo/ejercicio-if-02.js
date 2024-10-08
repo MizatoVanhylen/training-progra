@@ -11,15 +11,15 @@ Por debajo de 18.5    Bajo peso
 */
 
 const persona = {
-  peso: 73,
-  altura: 1.75,
+  peso: 42,
+  altura: 1.65,
 }; 
 
   const IMC = persona.peso / (persona.altura * persona.altura);
 
   const IMCComundecimal = IMC.toFixed(1);
 
-  console.log("Tu IMC es de" + IMCComundecimal)
+  console.log("Tu IMC es de " + IMCComundecimal)
   
     if(IMC < 18.5) {
       console.log("Bajo peso")

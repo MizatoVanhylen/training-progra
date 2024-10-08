@@ -1,7 +1,7 @@
 /*
 Calcular cuanto peso en la luna.
 */
-const pesotierra = 80;
+const pesotierra = 42;
 
 const gravluna = 0.165;
 
