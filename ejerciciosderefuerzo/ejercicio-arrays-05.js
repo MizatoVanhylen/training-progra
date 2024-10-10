@@ -11,12 +11,14 @@ console.log(pokemon);
 
 const evolucion = "Espeon"
 
-if (evolucion.length >= 8){pokemon.push(evolucion)
+if (evolucion.length >= 8){
+  pokemon.push(evolucion)
   console.log(`Se agrega ${evolucion} a la lista`)
-  } else { pokemon.push("Ditto");
-    console.log(`Se agrega Ditto a la lista`)
-  }
+} else { 
+  pokemon.push("Ditto");
+  console.log(`Se agrega Ditto a la lista`)
+ }
 
-
+console.log(pokemon);
   
 
