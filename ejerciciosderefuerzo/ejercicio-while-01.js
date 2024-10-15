@@ -28,25 +28,9 @@ while(lista == true){
 
 alert ("La lista de nombres ingresados es " + nombres);
 
-/*
-usa el mismo concepto pero que se ingrese un producto, y decir cuento es el total de la boleta
-*/
 
-/*
-un for que sume todos los valores de un array 
-*/
 
-/*
-un ejercicio que permita saber si un numero es primo o no
-*/
 
-/*
-hacer un for o while que muestre por pantalla una cantidad de 10 digitos 
-de la sucesión de fibonacci
-a = 0
-b = 1
-c = a + b
-*/
 
 
 
