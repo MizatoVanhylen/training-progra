@@ -22,8 +22,9 @@ daño y vida
 let elegirpokemon = true;
 let elegirpokemonenemigo= true;
 let jugador = [];
-let pokemones = {
-  eevee: {
+let jugadorEnemigo = [];
+let pokemones = [
+ {
     nombre: "Eevee",
     vida: 80,
     ataques: {
@@ -33,7 +34,7 @@ let pokemones = {
       atk4: {nombre: "Mordisco",daño: 40}
     }
   },
-  espeon: {
+  {
     nombre: "Espeon",
     vida: 160,
     ataques: {
@@ -43,7 +44,7 @@ let pokemones = {
       atk4: {nombre: "Premonición", daño: 120}
     }
   },
-  umbreon: {
+ {
     nombre: "Umbreon",
     vida: 160,
     ataques: {
@@ -53,10 +54,10 @@ let pokemones = {
       atk4: {nombre: "Última Baza", daño: 140}
     }
   }
-}
+]
 
-let pokemonesEnemigos = {
-  pichu: {
+let pokemonesEnemigos = [
+  {
     nombre: "Pichu",
     vida: 80,
     ataques: {
@@ -66,7 +67,7 @@ let pokemonesEnemigos = {
       atk4: {nombre: "Megapatada", daño: 120}
     }
   },
-  pikachu: {
+ {
     nombre: "Pikachu",
     vida: 160,
     ataques: {
@@ -76,7 +77,7 @@ let pokemonesEnemigos = {
       atk4: {nombre: "Doble Filo",  daño: 120}
     }
   },
-  raichu: {
+  {
     nombre: "Raichu",
     vida: 180,
     ataques: {
@@ -86,26 +87,36 @@ let pokemonesEnemigos = {
       atk4: {nombre: "Doble Filo", daño: 120}
     }
   }
-};
+];
 while (elegirpokemon === true) {
-  let pokemon = prompt("Elige tu Pokémon:\n 1 : Eevee \n 2 : Espeon \n 3 : Umbreon \n 4 : Si no deseas elegir Pokémon presiona")
-  if (pokemon === 1) {
-   jugador.push(pokemones.eevee);
-    alert("Elegiste a Eevee");
-  } else if (pokemon === 2) {
-    jugador.push(pokemones.espeon);
+  const pokemon = prompt("Elige tu Pokémon:\n 1 : Eevee \n 2 : Espeon \n 3 : Umbreon \n 4 : No deseo elegir un Pokémon");
+ if (pokemon == 1) {
+  jugador = pokemones[0];
+  alert("Elegiste a Eevee");
+  elegirpokemon = false
+ } else if (pokemon == 2) {
+    jugador = pokemones[1];
      alert("Elegiste a Espeon");
-  } else if (pokemon === 3) {
-    jugador.push(pokemones.umbreon);
+     elegirpokemon = false
+  } else if (pokemon == 3) {
+    jugador = pokemones[2];
      alert("Elegiste a Umbreon");
+     elegirpokemon = false
   } else if (pokemon == 4) {
     alert("No elegiste ningun Pokémon");
     elegirpokemon = false;
   } else {
     alert("Opción no válida, por favor elige de nuevo.");
   }
+  console.log(jugador)
 }
 
+const enemigo = Math.floor(Math.random() * 3);
+jugadorEnemigo = pokemonesEnemigos[enemigo];
+alert("El enemigo a elegido ha " + jugadorEnemigo.nombre);
+
+const ataques = prompt("Elige entre estos ataques:\n 1 : " + jugador.ataques.atk1.nombre + "\n 2 : " + jugador.ataques.atk2.nombre + "\n 3 : " + jugador.ataques.atk3.nombre + "\n 4 : " + jugador.ataques.atk4.nombre  );
+alert("Haz elegido " + );
 
 
 
