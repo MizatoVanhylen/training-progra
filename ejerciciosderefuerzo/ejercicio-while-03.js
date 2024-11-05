@@ -18,7 +18,7 @@ daño y vida
 6 repetir paso 4 y 5 hasta que uno de los pokemones muera
 
 */
-
+let iniciar = true; 
 let elegirpokemon = true;
 let elegirpokemonenemigo= true;
 let jugador = [];
@@ -107,6 +107,7 @@ while (elegirpokemon === true) {
      elegirpokemon = false
   } else if (pokemon == 4) {
     alert("No elegiste ningun Pokémon");
+    iniciar = false;
     elegirpokemon = false;
   } else {
     alert("Opción no válida, por favor elige de nuevo.");
@@ -116,28 +117,38 @@ while (elegirpokemon === true) {
 
 /* Elección del Pokémon Random*/
 
-const enemigo = Math.floor(Math.random() * 3);
-jugadorEnemigo = pokemonesEnemigos[enemigo];
-alert("El enemigo a elegido ha " + jugadorEnemigo.nombre + " que tiene " + jugadorEnemigo.vida + " de vida");
+if(iniciar == true){
+  const enemigo = Math.floor(Math.random() * 3);
+  jugadorEnemigo = pokemonesEnemigos[enemigo];
+  alert("El enemigo a elegido ha " + jugadorEnemigo.nombre + " que tiene " + jugadorEnemigo.vida + " de vida");
 
-/* Elección de ataques jugador*/
+  /* Elección de ataques jugador*/
 
-while(jugador.vida > 0 && jugadorEnemigo.vida > 0){
-  let ataques = prompt("Elige entre estos ataques:\n 1 : " + jugador.ataques[0].nombre + " daño: " + jugador.ataques[0].daño + "\n 2 : " + jugador.ataques[1].nombre +  " daño: " + jugador.ataques[1].daño + "\n 3 : " + jugador.ataques[2].nombre +  " daño: " + jugador.ataques[2].daño +"\n 4 : " + jugador.ataques[3].nombre +  " daño: " + jugador.ataques[3].daño);
-  ataques = ataques -1;
-  let peleaJugador = (jugadorEnemigo.vida - jugador.ataques[ataques].daño);
-  alert("Usas " + jugador.ataques[ataques].nombre + " que hace " + jugador.ataques[ataques].daño + " de daño para atacar a " + jugadorEnemigo.nombre + " dejandolo en " + peleaJugador + " de vida");
-  if(jugadorEnemigo.vida < 0) {
-    alert("Haz derrotado a " + jugadorEnemigo.nombre + "\n Ganaste!");
-    break;
+  while(jugador.vida > 0 && jugadorEnemigo.vida > 0){
+    let ataques = prompt("Elige entre estos ataques:\n 1 : " + jugador.ataques[0].nombre + " daño: " + jugador.ataques[0].daño + "\n 2 : " + jugador.ataques[1].nombre +  " daño: " + jugador.ataques[1].daño + "\n 3 : " + jugador.ataques[2].nombre +  " daño: " + jugador.ataques[2].daño +"\n 4 : " + jugador.ataques[3].nombre +  " daño: " + jugador.ataques[3].daño);
+    ataques = ataques -1;
+    jugadorEnemigo.vida = jugadorEnemigo.vida - jugador.ataques[ataques].daño;
+    alert("Usas " + jugador.ataques[ataques].nombre + " que hace " + jugador.ataques[ataques].daño + " de daño para atacar a " + jugadorEnemigo.nombre + " dejandolo en " + jugadorEnemigo.vida + " de vida");
+    if(jugadorEnemigo.vida <= 0) {
+      alert("Haz derrotado a " + jugadorEnemigo.nombre + "\n Ganaste!");
+      break;
+    };
+   /* Elección ataque random*/
+    const ataqueEnemigo = Math.floor(Math.random() * 3);
+    const atkJugadorEnemigo = jugadorEnemigo.ataques[ataqueEnemigo];
+    console.log(atkJugadorEnemigo, "aqui");
+    jugador.vida = jugador.vida - jugadorEnemigo.ataques[ataqueEnemigo].daño;
+    alert("El enemigo usa " + atkJugadorEnemigo.nombre + " que hace " + jugadorEnemigo.ataques[ataqueEnemigo].daño + " de daño contra " + jugador.nombre + " dejandolo con " + jugador.vida + " de vida");
+    if(jugador.vida <= 0) {
+      alert("Haz sido derrotado, intentalo de nuevo!");
+      break;
+    };
   };
-/* Elección ataque random*/
-  const ataqueEnemigo = Math.floor(Math.random() * 4);
-  jugadorEnemigo = pokemonesEnemigos[ataqueEnemigo]
-  let peleaJugadorEnemigo = (jugador.vida - jugador.ataques[ataqueEnemigo].daño);
-  alert("El enemigo usa " + jugador.ataques[ataqueEnemigo].nombre + " que hace " + jugador.ataques[ataqueEnemigo].daño + " de daño para atacar a " + jugador.nombre + " dejandolo en " + peleaJugadorEnemigo + " de vida");
-  if(jugador.vida < 0) {
-    alert("El enemigo ha derrotado a " + jugador.nombre + "\n Haz perdido, vuelve a intentarlo!");
-    break;
-  }
 }
+
+
+
+
+
+
+ 
