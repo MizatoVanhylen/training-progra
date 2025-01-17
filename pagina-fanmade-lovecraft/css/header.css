@@ -1,0 +1,20 @@
+.buttons{
+  position: absolute;
+  bottom: 0px;
+  display: flex;
+  }
+
+.btn-info{
+  color: red;
+  margin: black;
+}
+
+.hp-banner {
+  display: flex; 
+  justify-content: center; 
+  position: relative;
+}
+.lc-banner{
+  width: 2000px;
+  height: 300px;
+}
