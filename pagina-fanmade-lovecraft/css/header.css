@@ -1,20 +1,33 @@
-.buttons{
-  position: absolute;
-  bottom: 0px;
-  display: flex;
-  }
-
-.btn-info{
-  color: red;
-  margin: black;
+.banner-hp{
+  position: relative;
 }
 
-.hp-banner {
+.lc-banner {
   display: flex; 
   justify-content: center; 
-  position: relative;
+  
 }
 .lc-banner{
   width: 2000px;
   height: 300px;
 }
+
+.buttons{
+  position: absolute;
+  bottom: 15px;
+  left: 35%;
+  
+}
+
+.btn-header{
+  background-color: darkgoldenrod;
+  color: black;
+  height: 30px;
+  width: 150px;
+  border-radius: 80px;
+  font-size:20px;
+  font-weight: bold;
+  margin-right: 80px;
+}
+
+
