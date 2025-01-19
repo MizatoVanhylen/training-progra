@@ -42,11 +42,12 @@ p{
   margin: 20px;
 }
 
-li{
+.list{
   font-family: sans-serif;
   font-size: 20px;
   font-weight: 900px;
   color: aliceblue;
+  line-height: 3;
 }
 
 .lovecraft{
@@ -115,4 +116,31 @@ li{
 }
 .imgprim{
   margin: 200px;
+}
+
+.comp{
+  display: flex;
+  flex-direction: row-reverse;
+  align-content: center;
+  justify-content: center;
+  align-items: center;
+}
+
+.relatos{
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row-reverse;
+  align-items: baseline;
+  justify-content: center;
+}
+
+.duo{
+  width: 820px;
+  height: 600px;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: stretch;
+  margin: 30px;
 }
